@@ -12,9 +12,30 @@ export class Navbar extends React.Component {
 				</Link>
 				<div className="ml-auto">
 					<Link to="/demo">
-						<button className="btn btn-primary">
-							Check the Context in action
-						</button>
+						<div className="dropdown">
+							<button
+								className="btn btn-primary dropdown-toggle"
+								type="button"
+								id="dropdownMenuButton"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false">
+								Favorites
+							</button>
+							<div
+								className="dropdown-menu"
+								aria-labelledby="dropdownMenuButton">
+								<Link className="dropdown-item" to="#">
+									Action
+								</Link>
+								<Link className="dropdown-item" to="#">
+									Another action
+								</Link>
+								<Link className="dropdown-item" to="#">
+									Something else here
+								</Link>
+							</div>
+						</div>
 					</Link>
 				</div>
 			</nav>
