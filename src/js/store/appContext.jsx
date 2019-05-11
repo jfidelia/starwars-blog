@@ -27,6 +27,13 @@ const injectStore = PassedComponent => {
 					store.characters = data.results;
 					this.setState({ store });
 					// console.log(data);
+					fetch("https://swapi.co/api/planets/")
+						.then(response => response.json())
+						.then(data => {
+							let { store } = this.state;
+							store.planets = data.results;
+							this.setState({ store });
+						});
 				});
 		}
 

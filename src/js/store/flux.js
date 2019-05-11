@@ -2,13 +2,7 @@ const getState = ({ getStore, setStore }) => {
 	return {
 		store: {
 			characters: [],
-			planets: [
-				{
-					name: "name",
-					population: "population",
-					terrain: "terrain"
-				}
-			]
+			planets: []
 		},
 		actions: {
 			changeColor: (index, color) => {
